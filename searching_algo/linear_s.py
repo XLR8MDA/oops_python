@@ -12,8 +12,8 @@ def linear_search(arr,k):
 
 
 #search for 34
-print(search(arr,34))
+print(linear_search(arr,34))
 
 #search for 80
-print(search(arr,80))
+print(linear_search(arr,80))
 

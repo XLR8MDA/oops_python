@@ -1,4 +1,2 @@
-
-count = [0] * 26
-
-for i in 
+x=10
+print(x)
