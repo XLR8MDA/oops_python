@@ -53,8 +53,16 @@ values ('mai tera bf',1,2016),('teri aankhon',3,1998),('meri bheegi bheegi si',4
 --display these entries
 select * from songs;
 
--- hero tera song was released in 2020 so update the release year for the ST_LongFromGeoHash
+-- hero tera song was released in 2020 so update the release year for the song
 update songs
 set year_release=2000
-where song_name='hero tera';  -- succesfully changed
+where song_name='hero tera';  -- succesfully change
+
+--joins
+
+select * from artists
+inner join songs on artists.artist_id=songs.artist_id  --( inner join shows only values which are present in both tables)
+order by song_id DESC;
+
+
 
